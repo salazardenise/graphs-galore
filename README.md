@@ -53,11 +53,14 @@ This will write to output.txt the shortest path desired:
 ```
 4, 1, 7, 9, 6, 8, 2, 5,
 ```
+A visual representation of the shortest path from vertex 4 to vertex 5 of this graph is shown here.
+![input_directed_unweighted_bfs](images/input_directed_unweighted_bfs.png)
 
 If this graph was indicated as undirected, the following shortest path should be expected:
 ```
 4, 7, 9, 6, 8, 5, 
 ```
+A visual representation of the shortest path from vertex 4 to vertex 5 of the undirected version of this graph is shown here. ![input_undirected_unweighted_bfs](images/input_undirected_unweighted_bfs.png)
 
 If a path from source to destination does not exist, output.txt is not created or overwritten.
 
@@ -77,6 +80,7 @@ This will write to output.txt the graph's strongly connected componenets (1 scc 
 2, 5, 8,
 3, 6, 9, 
 ```
+A visual representation of the SCCs of this graph are circled in red. ![input_directed_unweighted_sccs](images/input_directed_unweighted_sccs.png)
 
 # Minimum Spanning Tree
 
@@ -96,4 +100,4 @@ The fast version of Prim's algorithm is used in the same manner.
 $ java -cp src FastPrimMST input_undirected_weighted.txt
 ```
 
-The runs above will create `output.txt` in which the first line denotes the overall cost of the MST found and the rest of the lines denote the edges in the MST. For the `input_undirected_wighted.txt` example, an overall MST cost of `-8.0` is expected and the MST is composed of 4 edges: `(1, 2), (2, 5), (5, 4), (2, 3)`.
+The runs above will create `output.txt` in which the first line denotes the overall cost of the MST found and the rest of the lines denote the edges in the MST. For the `input_undirected_weighted.txt` example, an overall MST cost of `-8.0` is expected and the MST is composed of 4 edges: `(1, 2), (2, 5), (5, 4), (2, 3)`. A visual represenation of the MST is shown here with all the edges of the MST highlighted in red. ![input_undirected_weighted_mst](images/input_undirected_weighted_mst.png)
