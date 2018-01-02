@@ -23,7 +23,7 @@ public class PrimMST {
 			if (scanner.hasNextLine()) {
 				String graphType = scanner.nextLine();
 				if (graphType.equals("directed")) {
-					System.out.println("ERROR: Graph is assumed to be undirected.");
+					System.out.println("ERROR: Graph is expected to be undirected.");
 					scanner.close();
 					return;
 				}
